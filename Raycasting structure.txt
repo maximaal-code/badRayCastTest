@@ -1,0 +1,22 @@
+Raytracing structure
+Classes:
+
+<Raycaster.hpp>
+Raycaster
+Has a list of hittable instances
+Has a function send_ray(origin3, direction3) and returns a color3
+
+
+<Ray.hpp>
+Ray
+Has an origin3, direction3 and a color3
+Has a function at(t) and return a point3 
+
+
+<Hittable.hpp>
+Hittable(superclass)
+ |_ Circle
+ |_	Sphere <sphere.hpp>
+ |_ Plane
+ |_ Cube
+Every subclass has a hit function and returns a ray
